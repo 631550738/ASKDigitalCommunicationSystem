@@ -1,0 +1,265 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\DigitalCommunicationSystem.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\DigitalCommunicationSystem.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 DigitalCommunicationSystem"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "DigitalCommunicationSystem 1.0 版",IDC_STATIC,40,10,119,
+                    8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2019",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_DIGITALCOMMUNICATIONSYSTEM_DIALOG DIALOGEX 0, 0, 624, 328
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "DigitalCommunicationSystem"
+FONT 9, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "生成低通滤波器",IDC_Lpf,498,88,61,14
+    PUSHBUTTON      "生成带通滤波器",IDC_Bpf,497,119,61,14
+    LTEXT           "ASK数字通信系统",IDC_STATIC,150,7,61,8
+    EDITTEXT        IDC_ID,425,31,33,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_Intensity,425,152,34,12,ES_RIGHT | ES_AUTOHSCROLL
+    LTEXT           "学号后四位：",IDC_STATIC,368,33,49,8
+    LTEXT           "信噪比（dB）：",IDC_STATIC,368,155,57,8
+    PUSHBUTTON      "生成基带信号",IDC_BaseSignal,497,31,61,14
+    GROUPBOX        "信号产生",IDC_STATIC,359,14,249,166
+    PUSHBUTTON      "低通滤波",IDC_PassLpf1,381,202,70,14
+    PUSHBUTTON      "调制",IDC_Modulate,381,225,70,14
+    PUSHBUTTON      "生成噪声",IDC_Noise,497,152,61,14
+    PUSHBUTTON      "信道",IDC_Channel,381,247,70,14
+    PUSHBUTTON      "带通滤波",IDC_PassBpf,511,197,69,14
+    PUSHBUTTON      "解调",IDC_Demodulate,511,217,69,14
+    PUSHBUTTON      "低通滤波",IDC_PassLpf2,511,237,69,14
+    PUSHBUTTON      "恢复判决",IDC_Adjust,511,257,69,14
+    GROUPBOX        "信号传输",IDC_STATIC,357,184,118,88
+    GROUPBOX        "信号接收",IDC_STATIC,488,184,117,99
+    GROUPBOX        "波形显示",IDC_STATIC,13,14,332,296
+    LTEXT           "低通滤波器wc：",IDC_STATIC,367,90,57,8
+    LTEXT           "带通滤波器w1：",IDC_STATIC,367,112,57,8
+    EDITTEXT        IDC_wc,425,90,34,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_w1,425,110,33,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_w2,425,130,33,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_T,17,28,324,125,ES_AUTOHSCROLL
+    EDITTEXT        IDC_F,17,166,324,134,ES_AUTOHSCROLL
+    EDITTEXT        IDC_seq1_0,399,66,10,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_seq1_1,410,66,10,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_seq1_2,422,66,10,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_seq1_3,434,66,10,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_seq1_4,446,66,10,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_seq1_5,458,66,10,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_seq1_6,470,66,10,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_seq1_7,482,66,10,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_seq1_8,494,66,10,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_seq1_9,506,66,10,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_seq1_10,518,66,10,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_seq1_11,530,66,10,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_seq1_12,542,66,10,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_seq1_13,554,66,10,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_seq1_14,566,66,10,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_seq1_15,578,66,10,14,ES_AUTOHSCROLL
+    LTEXT           "生成二进制序列：",IDC_STATIC,368,54,65,8
+    EDITTEXT        IDC_seq2_0,399,294,10,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_seq2_1,410,294,10,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_seq2_2,422,294,10,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_seq2_3,434,294,10,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Eseq2_4,446,294,10,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_seq2_5,458,294,10,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_seq2_6,470,294,10,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_seq2_7,482,294,10,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_seq2_8,494,294,10,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_seq2_9,506,294,10,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_seq2_10,518,294,10,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_seq2_11,530,294,10,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_seq2_12,542,294,10,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_seq2_13,554,294,10,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_seq2_14,566,294,10,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_seq2_15,578,294,10,14,ES_AUTOHSCROLL
+    LTEXT           "抽样判决得到的二进制序列为：",IDC_STATIC,359,280,113,8
+    LTEXT           "w2：",IDC_STATIC,407,132,17,8
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "DigitalCommunicationSystem Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "DigitalCommunicationSystem\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2019\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "DigitalCommunicationSystem.EXE\0"
+            VALUE "ProductName", "DigitalCommunicationSystem 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_DIGITALCOMMUNICATIONSYSTEM_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 617
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 321
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 DigitalCommunicationSystem(&A)..."
+END
+
+#endif    // Chinese (中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\DigitalCommunicationSystem.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
